@@ -1,0 +1,18 @@
+
+-- CREATE SCHEMA DATABASE
+CREATE DATABASE `trainee_schema`;
+
+-- CREATE TABLE
+CREATE TABLE `trainee_schema`.`trainee_user` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(63) NOT NULL,
+  `name` varchar(63) DEFAULT NULL,
+  `lastname` varchar(90) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+-- INSERT ONLY ONE RECORD
+INSERT INTO `trainee_schema`.`trainee_user` (`username`, `name`, `lastname`)
+VALUES
+('rodrigomirazo', 'Rodrigo', 'Mirazo');
+
